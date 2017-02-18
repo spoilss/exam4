@@ -1,0 +1,357 @@
+//GLOBAL
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row:after, .container:after, .row:before, .container:before{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.text-center{
+	text-align: center;
+}
+
+html {
+	height: 100%;
+}
+body, html {
+	min-height: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.clear-fix{
+	clear: both;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1026px;
+}
+.no-padding{
+	padding-left: 0;
+	padding-right: 0;
+}
+//contact button
+.button-about{
+	//margin-top: 40px;
+	//margin-left: 350px;
+	border-radius:30px 30px 30px 30px;
+	background: white;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	margin-bottom: 70px;
+	border: solid 1px #d7d7d7;
+	&:hover{
+		background: red;
+		color: white;
+	}
+}
+
+//FONTS
+
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/myriad/MyriadPro-Regular.woff') format('woff'),
+	url('../fonts/myriad/MyriadPro-Regular.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url('../fonts/roboto/Roboto-Black.woff') format('woff'),
+	url('../fonts/roboto/Roboto-Black.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../fonts/roboto/Roboto-Bold.woff') format('woff'),
+	url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../fonts/roboto/Roboto-Light.woff') format('woff'),
+	url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-LightItalic';
+	src: url('../fonts/roboto/Roboto-LightItalic.woff') format('woff'),
+	url('../fonts/roboto/Roboto-LightItalic.ttf') format('truetype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url('../fonts/roboto/Roboto-Thin.woff') format('woff'),
+	url('../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+	font-style: normal;
+}
+
+
+
+//HEADER
+
+header{
+	.container-fluid{
+		background: url("../img/header-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		.container{
+			.navbar-default{
+				background: none;
+				border: none;
+				padding-top: 49px;
+				.nav{
+					font-family: 'Roboto-Black';
+					font-size: 13px;
+					font-weight: 600;
+					font-style: normal;
+					text-transform: uppercase;
+					li a{
+						color: #ffffff;
+					}
+					a:hover{
+						color: lightsalmon;
+						border-bottom: solid #ffefeb 2px;
+					}
+				}
+				.right-menu{
+					float:right;
+				}
+			}
+			.footer-content{
+				margin-top: 235px;
+				margin-bottom: 80px;
+				h1{
+					font-family: 'MyriadPro-Regular';
+					font-size: 55px;
+					font-weight: 700;
+					font-style: normal;
+					color: white;
+					padding-bottom: 35px;
+				}
+				.header-button{
+					margin-bottom: 225px;
+					padding: 22px 90px 22px 60px;
+					background:#f2385a;
+					border-radius:50px 50px 50px 50px;
+					font-family: 'Roboto-Light';
+					font-size: 22px;
+					font-weight: 400;
+					color: white;
+					outline: none;
+					&:hover{
+						color:black;
+					}
+				}
+
+
+			}
+
+		}
+	}
+}
+main {
+
+	.about{
+		margin-top:70px;
+		.about-me{
+			h2{
+				font-family: 'Roboto-Black';
+				font-size: 25px;
+				font-weight: 900;
+				text-align: left;
+			}
+		}
+		.about-me-text{
+			font-family: 'Roboto-Light';
+			font-size: 15px;
+
+		}
+		.button-about {
+			margin-top: 40px;
+			margin-left: 350px;
+		}
+
+
+	}
+	.popular-bg{
+		background: url("../img/popular-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		.popular{
+			.blue-part{
+				h2{
+					font-family: 'Roboto-Black';
+					color: #ffffff;
+					font-size: 22px;
+					font-weight: 900;
+					text-transform: uppercase;
+
+				}
+				p{
+					font-family: 'Roboto-Light';
+					color: #ffffff;
+					font-size: 16px;
+				}
+				.button-about{
+					margin-top: 55px;
+					margin-bottom: 90px;
+				}
+			}
+		}
+	}
+	.portfolio{
+		padding-top: 70px;
+		h2{
+			font-family: 'Roboto-Black';
+			color: black;
+			font-size: 24px;
+			font-weight: 900;
+			text-transform: uppercase;
+			padding-top: 23px;
+
+		}
+		p{
+			font-family: 'Roboto-bold';
+			color: black;
+			font-size: 16px;
+		}
+		.button-about{
+			margin-top: 20px;
+			margin-bottom: 54px;
+			margin-left: 426px;
+		}
+	}
+	.gallery{
+		img{
+			height: auto;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+	}
+	.lorem{
+		margin-top: 100px;
+		z-index: 1;
+		.quotes{
+			img{
+				margin-left:70px;
+			}
+
+		}
+		.slider1-text{
+			h4{
+				font-family: 'Roboto-Black';
+				color: #000000;
+				font-size: 13px;
+				font-weight: 700;
+			}
+			p{
+				font-family: 'Roboto-LightItalic';
+				color: #000000;
+				font-size: 13px;
+				font-weight: 500;
+				padding-bottom: 125px;
+			}
+		}
+
+		.slick-arrow{
+				position: absolute;
+		}
+		.slick-next{
+			background: url("../img/right-arrow.png");
+			top:70px;
+			height: 90px;
+			width: 50px;
+				background-repeat: no-repeat;
+				background-size: cover;
+		}
+		.slick-prev{
+			background: url("../img/left-arrow.png");
+			top:70px;
+			height: 90px;
+			width: 50px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+	}
+
+}
+.footer-bg{
+	background: url("../img/footer-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	.navbar-default{
+		background: none;
+		border: none;
+		padding-top: 49px;
+		.nav{
+			font-family: 'Roboto-Black';
+			font-size: 13px;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			li a{
+				color: #ffffff;
+			}
+			a:hover{
+				color: lightsalmon;
+				border-bottom: solid #ffefeb 2px;
+			}
+		}
+		.right-menu{
+			float:left;
+			position: relative;
+			left: -43px;
+		}
+		p{
+			font-family: 'Roboto-Light';
+			font-size: 15px;
+		}
+		img{
+			margin-bottom: 40px;
+		}
+	}
+	.right-part-footer{
+		color:white;
+		h2{
+			font-family: 'Roboto-Black';
+			font-size: 13px;
+			font-weight: 600;
+			font-style: normal;
+			text-transform: uppercase;
+			padding-top: 45px;
+		}
+		p{
+			font-family: 'Roboto-Light';
+			font-size: 13px;
+		}
+		input{
+			background: none;
+			outline: 1px #ffffff solid;
+			border-radius:50px 50px 50px 50px;
+
+		}
+		.footer-button{
+			border-radius:50px 50px 50px 50px;
+			padding-left: 30px;
+			padding-right: 30px;
+			background-color:#f2385a;
+			&:hover{
+				background:yellow;
+				color: palevioletred;
+			}
+		}
+	}
+}
